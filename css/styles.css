@@ -1,0 +1,298 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: Raleway, sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+* ::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ffffff; /* background: #E5E5E5; */
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  border: 3px solid red;
+
+}
+
+/* .list */
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+/*   .link  */
+.link {
+  text-decoration: none;
+}
+/*color: #FFFFFF;
+color: #212121;Чем мы занимаемся
+color: #757575;  Внимание к деталям-down
+color: #FFFFFF;Десктопные приложения
+color: #2196F3; Web Studio
+*/
+/* header */
+header {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* logo */
+.logo {
+  color: #000000;
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-down {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+}
+.logo-web-down {
+  color: var(--accent-color);
+}
+.logo-margin {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* site-nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* address  */
+.address-nav a {
+  color: #757575;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
+}
+.address-nav a:focus,
+.address-nav a:hover {
+  color: var(--accent-color);
+}
+/* hero  */
+.hero {
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+/* Чем мы занимаемся- Постоянные клиенты */
+.section {
+  background-color: greenyellow;
+  padding-bottom: 94px;
+  padding-top: 47px;
+}
+
+.clients {
+  background-color: lightblue;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title,
+.clients-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+/* Чем мы занимaемся-список */
+.section .section-name {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* buttons */
+.button {
+  color: white;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+}
+.order-button {
+  padding: 10px 32px;
+  min-width: 200px;
+}
+/*    about*/
+.about {
+  background-color: lightcoral;
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.about .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.about-list-text {
+  margin-top: 0px;
+}
+
+/* team */
+.team {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .team-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.team .team-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0px;
+}
+.foto-team {
+  margin-bottom: 30px;
+}
+
+/* footer + address */
+
+.address-town {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+.address-mail-phone a {
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-mail-phone {
+  margin-bottom: 9px;
+}
+b {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+}
+/*  portfolio */
+/* projects name  */
+.projects-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.projects-service {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+.projects-description {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--secondary-text-color);
+}
+.projects-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+}
+.projects-button :hover,
+.projects-button :focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+footer {
+  background: #2f303a;
+}
