@@ -58,6 +58,9 @@ header {
   display: flex;
   border: 2px solid orangered;
 }
+.logo-margin {
+  margin-top: 60px;
+}
 
 .logo {
   color: #000000;
@@ -173,9 +176,8 @@ header {
   display: flex;
   background-color: salmon;
 }
-.section-list :not(:last-child) {
+.section-list .item:not(:last-child) {
   margin-right: 30px;
-  margin-left: 0px;
 }
 
 .clients {
@@ -221,6 +223,24 @@ header {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+.projects-button .portfolio-button:not(:last child) {
+  margin-right: 8px;
+}
+.projects-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 .order-button {
   padding: 10px 32px;
@@ -269,6 +289,13 @@ header {
   margin-bottom: 50px;
   margin-top: 0px;
 }
+.team-list {
+  display: flex;
+  background-color: orange;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team .team-name {
   color: var(--title-text-color);
@@ -277,18 +304,26 @@ header {
   line-height: 1.18;
   margin-bottom: 10px;
   margin-top: 0px;
+  text-align: center;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0px;
+  text-align: center;
 }
 .foto-team {
   margin-bottom: 30px;
 }
 
 /* footer + address */
+
+.join {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .address-town {
   color: var(--secondary-text-color);
@@ -345,6 +380,7 @@ b {
   color: var(--title-text-color);
   margin-top: 0px;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 .projects-service {
   font-size: 16px;
@@ -352,6 +388,7 @@ b {
   color: var(--primary-text-color);
   margin-top: 0px;
   margin-bottom: 20px;
+  margin-left: 24px;
 }
 .projects-description {
   font-size: 18px;
