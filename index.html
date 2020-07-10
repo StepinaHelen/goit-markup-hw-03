@@ -72,7 +72,7 @@
           <!--О нас-->
           <h2 hidden>О нас</h2>
           <ul class="about-list list">
-            <li>
+            <li class="items">
               <img src="./images/antenna.svg" alt="Антена" />
               <h3 class="title">Внимание к деталям</h3>
               <p class="about-list-text">
@@ -81,7 +81,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="items">
               <img src="./images/clock.svg" alt="Часы" />
               <h3 class="title">Пунктуальность</h3>
               <p class="about-list-text">
@@ -89,7 +89,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="items">
               <img src="./images/diagram.svg" alt="График" />
               <h3 class="title">Планирование</h3>
               <p class="about-list-text">
@@ -97,10 +97,10 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="items">
               <img src="./images/astronaut.svg" alt="Астронавт" />
               <h3 class="title">Современные технологии</h3>
-              <p>
+              <p class="about-list-text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -293,7 +293,7 @@
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li>
-              <a href="" aria-label="логотип компании 1"
+              <a  href="" aria-label="логотип компании 1"
                 ><img src="./images/logo1.svg" alt="логотип компании 1"
               /></a>
             </li>
@@ -330,12 +330,13 @@
 
     <!--футер-->
     <footer>
-      <div class="container">
-        <div class="logo-margin">
+      <div class="container footer">
+        <div class="logo-address">
+        
           <a class="logo-down link" href="./index.html" lang="en">
             <span class="logo-web-down">Web</span> Studio
           </a>
-        </div>
+        
         <address class="address-footer">
           <ul class="address-footer-list list">
             <li class="address-town">
@@ -351,8 +352,9 @@
             </li>
           </ul>
         </address>
+        </div>
 
-        <div>
+        <div class="social">
           <b>присоединяйтесь</b>
           <ul class="footer-items list">
             <li>
@@ -376,9 +378,11 @@
               /></a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
           <b>Подпишитесь на рассылку</b>
 
-          <button class="button">
+          <button class=" down-button button">
             Подписаться <img src="./images/send.svg" alt="" />
           </button>
         </div>

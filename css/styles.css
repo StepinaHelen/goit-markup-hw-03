@@ -27,7 +27,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  outline: 3px solid red;
+  outline: 3px solid rgb(100, 189, 201);
 }
 
 /* .list */
@@ -39,6 +39,10 @@ body {
 /*   .link  */
 .link {
   text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
 }
 /*color: #FFFFFF;
 color: #212121;Чем мы занимаемся
@@ -56,10 +60,6 @@ header {
 .logo-nav {
   margin-right: 80px;
   display: flex;
-  border: 2px solid orangered;
-}
-.logo-margin {
-  margin-top: 60px;
 }
 
 .logo {
@@ -80,17 +80,16 @@ header {
   font-size: 26px;
   line-height: 1.19;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 .logo-web-down {
   color: var(--accent-color);
 }
 
 /* site-nav */
+
+.main-nav,
 .main-nav nav {
-  display: flex;
-  align-items: center;
-}
-.main-nav {
   display: flex;
   align-items: center;
 }
@@ -103,7 +102,6 @@ header {
 }*/
 /* применяется ко всем кроме первого соседа */
 .site-nav .item + .item {
-  border: 2px solid fuchsia;
   margin-left: 50px;
 }
 
@@ -133,8 +131,12 @@ header {
   margin-left: auto;
 }
 .address .item + .item {
-  border: 2px solid salmon;
   margin-left: 30px;
+}
+.address .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .address-nav a {
@@ -168,22 +170,38 @@ header {
 }
 /* Чем мы занимаемся- Постоянные клиенты */
 .section {
-  background-color: greenyellow;
   padding-bottom: 94px;
   padding-top: 47px;
 }
 .section-list {
   display: flex;
-  background-color: salmon;
 }
 .section-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients {
-  background-color: lightblue;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients li a {
+  background-color: chartreuse;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  display: block;
+  align-items: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-title,
@@ -224,6 +242,9 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
 }
+.down-button {
+  min-width: 200px;
+}
 
 .portfolio-button {
   padding: 6px 22px;
@@ -248,7 +269,6 @@ header {
 }
 /*    about*/
 .about {
-  background-color: lightcoral;
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -258,17 +278,16 @@ header {
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 0px;
+  margin: 0px 0px 10px 0px;
 }
 .about-list {
   display: flex;
 }
-.about-list :not(:last-child) {
+.about-list .items:not(:last-child) {
   margin-right: 30px;
 }
 .about-list-text {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 /* team */
@@ -291,10 +310,14 @@ header {
 }
 .team-list {
   display: flex;
-  background-color: orange;
 }
 .team-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.team-item {
+  display: flex;
+  padding: 16px 32px 24px 32px;
+  justify-content: space-between;
 }
 
 .team .team-name {
@@ -319,10 +342,12 @@ header {
 
 /* footer + address */
 
-.join {
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address-town {
