@@ -249,7 +249,9 @@ header {
   border: 0px;
 }
 .down-button {
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
+  display: flex;
 }
 
 .portfolio-button {
@@ -346,6 +348,10 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.team-item li:hover,
+.team-item li:focus {
+  background-color: var(--accent-color);
 }
 
 .team-item li:not(:last-child) {
@@ -450,11 +456,12 @@ b {
 .projects-description {
   font-size: 18px;
   line-height: 1.55;
-  color: grey;
+  color: var(--secondary-text-color);
   margin: 0px;
   padding: 63px 24px;
 }
-.projects-description:hover {
+.projects-description:hover,
+.projects-description:focus {
   background-color: var(--accent-color);
 }
 .projects-button {
@@ -487,6 +494,10 @@ footer {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-items li:hover,
+.footer-items li:focus {
+  background-color: var(--accent-color);
 }
 .footer-items li:not(:last-child) {
   margin-right: 10px;
