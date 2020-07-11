@@ -56,10 +56,6 @@ header {
 }
 
 /* logo */
-.logo-nav {
-  margin-right: 80px;
-  display: flex;
-}
 
 .logo {
   color: #000000;
@@ -68,6 +64,7 @@ header {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 80px;
 }
 .logo-web {
   color: var(--accent-color);
@@ -254,13 +251,18 @@ header {
   display: flex;
 }
 
-.portfolio-button {
+.portfolio-button button {
   padding: 6px 22px;
+}
+.projects-button .portfolio-button:not(:last-child) {
   margin-right: 8px;
 }
-.projects-button .portfolio-button:not(:last child) {
-  margin-right: 8px;
+
+.projects-button {
+  display: flex;
+  justify-content: center;
 }
+
 .projects-button {
   font-family: inherit;
   font-weight: 500;
@@ -334,7 +336,7 @@ header {
 }
 .team-list .item {
   background-color: white;
-  height: 422px;
+  padding-bottom: 24px;
 }
 .team-item {
   display: flex;
