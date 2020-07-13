@@ -22,6 +22,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+section {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -163,10 +167,7 @@ header {
   margin-top: 0px;
 }
 /* Чем мы занимаемся- Постоянные клиенты */
-.section {
-  padding-bottom: 94px;
-  padding-top: 47px;
-}
+
 .section-list {
   display: flex;
 }
@@ -176,7 +177,6 @@ header {
 
 .clients {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .clients-list li a {
@@ -315,10 +315,13 @@ header {
 
 /* team */
 .team {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #f5f4fa;
+  background-image: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #f5f4fa;
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team .team-title {
