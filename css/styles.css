@@ -315,13 +315,9 @@ header {
 
 /* team */
 .team {
-  background-image: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    #f5f4fa;
-  padding-top: 94px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #f5f4fa;
+  padding-bottom: 94px;
 }
 
 .team .team-title {
